@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "revivalamuletmod",
+	"version": "${version}",
+	"name": "Revival Amulet Mod",
+	"description": "Revival Amulet Mod by Bossificator",
+	"authors": [
+		"Bossificator"
+	],
+	"contact": {
+		"homepage": "(Doesn't yet exist) https://fabricmc.net/",
+		"sources": "(Doesn't yet exist) https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "N/A",
+	"icon": "assets/revivalamuletmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.bossificator.revivalamuletmod.RevivalAmuletMod"
+		],
+		"fabric-datagen": [
+			"net.bossificator.revivalamuletmod.RevivalAmuletModDataGenerator"
+		],
+		"client": [
+			"net.bossificator.revivalamuletmod.RevivalAmuletModClient"
+		]
+	},
+	"mixins": [
+		"revivalamuletmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
